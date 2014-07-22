@@ -14,19 +14,20 @@ class Person {
     //But we do have to set 'firstName' in 'init' mtd since its not already set on its property
     //An optional value could be omitted in 'init' since it either take a value or nil
     
-    var lastName = "Johnson"
+    var lastName : String
     var firstName:String
     var image:UIImage?
     
     init(fName:String, lName:String) {
         self.firstName = fName
-        self.image = UIImage()
+        self.lastName = lName
+        //self.image = UIImage(named: "placeholder.jpg")
         
     }
     
     func fullName() -> (String) {
     
-        return self.firstName + self.lastName
+        return self.firstName + " " + self.lastName
     }
 
 }

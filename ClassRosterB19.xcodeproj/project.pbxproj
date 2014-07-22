@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2294CF197EF83D0078C925 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2294CE197EF83D0078C925 /* DetailViewController.swift */; };
 		5B4DF5DD197DB64A008BBB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */; };
-		5B4DF5DF197DB64A008BBB51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5DE197DB64A008BBB51 /* ViewController.swift */; };
+		5B4DF5DF197DB64A008BBB51 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5DE197DB64A008BBB51 /* PeopleViewController.swift */; };
 		5B4DF5E2197DB64A008BBB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF5E0197DB64A008BBB51 /* Main.storyboard */; };
 		5B4DF5E4197DB64A008BBB51 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF5E3197DB64A008BBB51 /* Images.xcassets */; };
 		5B4DF5F0197DB64A008BBB51 /* ClassRosterB19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5EF197DB64A008BBB51 /* ClassRosterB19Tests.swift */; };
@@ -17,6 +18,18 @@
 		5B4DF600197DB727008BBB51 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5FE197DB727008BBB51 /* Person.swift */; };
 		5B4DF604197DC56C008BBB51 /* personsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF603197DC56C008BBB51 /* personsList.plist */; };
 		5B4DF605197DC56C008BBB51 /* personsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF603197DC56C008BBB51 /* personsList.plist */; };
+		5BB09647197F15C4007C6E4B /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09646197F15C4007C6E4B /* placeholder.jpg */; };
+		5BB09654197F1B34007C6E4B /* alex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09649197F1B34007C6E4B /* alex.jpg */; };
+		5BB09655197F1B34007C6E4B /* brad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964A197F1B34007C6E4B /* brad.jpg */; };
+		5BB09656197F1B34007C6E4B /* collin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964B197F1B34007C6E4B /* collin.jpg */; };
+		5BB09657197F1B34007C6E4B /* dan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964C197F1B34007C6E4B /* dan.jpg */; };
+		5BB09658197F1B34007C6E4B /* jeff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964D197F1B34007C6E4B /* jeff.jpg */; };
+		5BB09659197F1B34007C6E4B /* john.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964E197F1B34007C6E4B /* john.jpg */; };
+		5BB0965A197F1B34007C6E4B /* kirby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964F197F1B34007C6E4B /* kirby.jpg */; };
+		5BB0965B197F1B34007C6E4B /* leo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09650197F1B34007C6E4B /* leo.png */; };
+		5BB0965C197F1B34007C6E4B /* mike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09651197F1B34007C6E4B /* mike.jpg */; };
+		5BB0965D197F1B34007C6E4B /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09652197F1B34007C6E4B /* placeholder.jpg */; };
+		5BB0965E197F1B34007C6E4B /* victor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09653197F1B34007C6E4B /* victor.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B2294CE197EF83D0078C925 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5B4DF5D7197DB64A008BBB51 /* ClassRosterB19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassRosterB19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4DF5DB197DB64A008BBB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B4DF5DE197DB64A008BBB51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ClassRosterB19/AppDelegate.swift; sourceTree = "<group>"; };
+		5B4DF5DE197DB64A008BBB51 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		5B4DF5E1197DB64A008BBB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B4DF5E3197DB64A008BBB51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5B4DF5E9197DB64A008BBB51 /* ClassRosterB19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassRosterB19Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +55,19 @@
 		5B4DF5EF197DB64A008BBB51 /* ClassRosterB19Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassRosterB19Tests.swift; sourceTree = "<group>"; };
 		5B4DF5FC197DB6CA008BBB51 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		5B4DF5FE197DB727008BBB51 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		5B4DF603197DC56C008BBB51 /* personsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = personsList.plist; sourceTree = "<group>"; };
+		5B4DF603197DC56C008BBB51 /* personsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = personsList.plist; path = ClassRosterB19Tests/personsList.plist; sourceTree = SOURCE_ROOT; };
+		5BB09646197F15C4007C6E4B /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		5BB09649197F1B34007C6E4B /* alex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alex.jpg; sourceTree = "<group>"; };
+		5BB0964A197F1B34007C6E4B /* brad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brad.jpg; sourceTree = "<group>"; };
+		5BB0964B197F1B34007C6E4B /* collin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = collin.jpg; sourceTree = "<group>"; };
+		5BB0964C197F1B34007C6E4B /* dan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dan.jpg; sourceTree = "<group>"; };
+		5BB0964D197F1B34007C6E4B /* jeff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeff.jpg; sourceTree = "<group>"; };
+		5BB0964E197F1B34007C6E4B /* john.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = john.jpg; sourceTree = "<group>"; };
+		5BB0964F197F1B34007C6E4B /* kirby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kirby.jpg; sourceTree = "<group>"; };
+		5BB09650197F1B34007C6E4B /* leo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leo.png; sourceTree = "<group>"; };
+		5BB09651197F1B34007C6E4B /* mike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mike.jpg; sourceTree = "<group>"; };
+		5BB09652197F1B34007C6E4B /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		5BB09653197F1B34007C6E4B /* victor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = victor.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +91,7 @@
 		5B4DF5CE197DB64A008BBB51 = {
 			isa = PBXGroup;
 			children = (
+				5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */,
 				5B4DF5D9197DB64A008BBB51 /* ClassRosterB19 */,
 				5B4DF5EC197DB64A008BBB51 /* ClassRosterB19Tests */,
 				5B4DF5D8197DB64A008BBB51 /* Products */,
@@ -86,11 +113,11 @@
 				5B4DF5FB197DB676008BBB51 /* Controllers */,
 				5B4DF5FA197DB664008BBB51 /* Views */,
 				5B4DF5F9197DB657008BBB51 /* Models */,
-				5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */,
-				5B4DF5DE197DB64A008BBB51 /* ViewController.swift */,
-				5B4DF5E0197DB64A008BBB51 /* Main.storyboard */,
 				5B4DF5E3197DB64A008BBB51 /* Images.xcassets */,
+				5BB09648197F1B34007C6E4B /* images */,
+				5BB09646197F15C4007C6E4B /* placeholder.jpg */,
 				5B4DF5DA197DB64A008BBB51 /* Supporting Files */,
+				5B4DF603197DC56C008BBB51 /* personsList.plist */,
 			);
 			path = ClassRosterB19;
 			sourceTree = "<group>";
@@ -108,7 +135,6 @@
 			children = (
 				5B4DF5EF197DB64A008BBB51 /* ClassRosterB19Tests.swift */,
 				5B4DF5FC197DB6CA008BBB51 /* PersonTests.swift */,
-				5B4DF603197DC56C008BBB51 /* personsList.plist */,
 				5B4DF5ED197DB64A008BBB51 /* Supporting Files */,
 			);
 			path = ClassRosterB19Tests;
@@ -133,6 +159,7 @@
 		5B4DF5FA197DB664008BBB51 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B4DF5E0197DB64A008BBB51 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -140,8 +167,29 @@
 		5B4DF5FB197DB676008BBB51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B4DF5DE197DB64A008BBB51 /* PeopleViewController.swift */,
+				5B2294CE197EF83D0078C925 /* DetailViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		5BB09648197F1B34007C6E4B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5BB09649197F1B34007C6E4B /* alex.jpg */,
+				5BB0964A197F1B34007C6E4B /* brad.jpg */,
+				5BB0964B197F1B34007C6E4B /* collin.jpg */,
+				5BB0964C197F1B34007C6E4B /* dan.jpg */,
+				5BB0964D197F1B34007C6E4B /* jeff.jpg */,
+				5BB0964E197F1B34007C6E4B /* john.jpg */,
+				5BB0964F197F1B34007C6E4B /* kirby.jpg */,
+				5BB09650197F1B34007C6E4B /* leo.png */,
+				5BB09651197F1B34007C6E4B /* mike.jpg */,
+				5BB09652197F1B34007C6E4B /* placeholder.jpg */,
+				5BB09653197F1B34007C6E4B /* victor.jpg */,
+			);
+			name = images;
+			path = "Soccer Stars";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +273,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4DF5E2197DB64A008BBB51 /* Main.storyboard in Resources */,
+				5BB09657197F1B34007C6E4B /* dan.jpg in Resources */,
+				5BB09654197F1B34007C6E4B /* alex.jpg in Resources */,
+				5BB0965C197F1B34007C6E4B /* mike.jpg in Resources */,
+				5BB09647197F15C4007C6E4B /* placeholder.jpg in Resources */,
+				5BB09658197F1B34007C6E4B /* jeff.jpg in Resources */,
+				5BB09656197F1B34007C6E4B /* collin.jpg in Resources */,
+				5BB0965B197F1B34007C6E4B /* leo.png in Resources */,
+				5BB09659197F1B34007C6E4B /* john.jpg in Resources */,
 				5B4DF604197DC56C008BBB51 /* personsList.plist in Resources */,
+				5BB0965A197F1B34007C6E4B /* kirby.jpg in Resources */,
+				5BB0965D197F1B34007C6E4B /* placeholder.jpg in Resources */,
+				5BB09655197F1B34007C6E4B /* brad.jpg in Resources */,
+				5BB0965E197F1B34007C6E4B /* victor.jpg in Resources */,
 				5B4DF5E4197DB64A008BBB51 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,8 +306,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4DF5FF197DB727008BBB51 /* Person.swift in Sources */,
-				5B4DF5DF197DB64A008BBB51 /* ViewController.swift in Sources */,
+				5B4DF5DF197DB64A008BBB51 /* PeopleViewController.swift in Sources */,
 				5B4DF5DD197DB64A008BBB51 /* AppDelegate.swift in Sources */,
+				5B2294CF197EF83D0078C925 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +500,7 @@
 				5B4DF5F5197DB64A008BBB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B4DF5F6197DB64A008BBB51 /* Build configuration list for PBXNativeTarget "ClassRosterB19Tests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +509,7 @@
 				5B4DF5F8197DB64A008BBB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

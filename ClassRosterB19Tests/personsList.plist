@@ -7,8 +7,80 @@
 		<string>Brad</string>
 		<key>lastName</key>
 		<string>Johnson</string>
+		<key>image</key>
+		<string>brad</string>
 	</dict>
-	<dict/>
-	<dict/>
+	<dict>
+		<key>firstName</key>
+		<string>Collin</string>
+		<key>lastName</key>
+		<string>Atherton</string>
+		<key>image</key>
+		<string>collin</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>John</string>
+		<key>lastName</key>
+		<string>Clem</string>
+		<key>image</key>
+		<string>john</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Jeff</string>
+		<key>lastName</key>
+		<string>Gayle</string>
+		<key>image</key>
+		<string>jeff</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Daniel</string>
+		<key>lastName</key>
+		<string>Hoang</string>
+		<key>image</key>
+		<string>dan</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Brad</string>
+		<key>lastName</key>
+		<string>Johnson</string>
+		<key>image</key>
+		<string>brad</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Leonardo </string>
+		<key>lastName</key>
+		<string>Lee</string>
+		<key>image</key>
+		<string>leo</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Alex</string>
+		<key>lastName</key>
+		<string>Rice</string>
+		<key>image</key>
+		<string>alex</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Kirby </string>
+		<key>lastName</key>
+		<string>Shabaga</string>
+		<key>image</key>
+		<string>kirby</string>
+	</dict>
+	<dict>
+		<key>firstName</key>
+		<string>Michael</string>
+		<key>lastName</key>
+		<string>Tirenin</string>
+		<key>image</key>
+		<string>mike</string>
+	</dict>
 </array>
 </plist>
