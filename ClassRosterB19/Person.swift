@@ -16,6 +16,9 @@ class Person {
     
     var lastName : String
     var firstName:String
+    
+    var twitterHandler:String?
+    var githubHandler: String?
     var image:UIImage?
     
     init(fName:String, lName:String) {

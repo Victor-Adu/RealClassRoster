@@ -10,6 +10,10 @@ import UIKit
 
 class PersonCell: UITableViewCell {
 
+    @IBOutlet var cellImage: UIImageView?
+    
+    @IBOutlet var personName: UILabel?
+    
     init(style: UITableViewCellStyle, reuseIdentifier: String) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Initialization code

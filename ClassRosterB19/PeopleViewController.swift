@@ -10,21 +10,21 @@ import UIKit
 
 class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var people = Person[]() //Create an empty array in the Person class
+    var people = [Person]() //Create an empty array in the Person class
                             
-    @IBOutlet var tableView: UITableView
+    @IBOutlet var tableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
+        self.tableView!.dataSource = self
+        self.tableView!.delegate = self
 //        self.setupPersonArray()
         people = loadRosterFromPlist()
-        self.tableView.reloadData()
+        self.tableView!.reloadData()
     }
     override func viewWillAppear(animated: Bool) {
-        tableView.reloadData()
+        tableView!.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,17 +46,19 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //        var mike = Person(fName: "Michael", lName: "Tirenin")
 //        
 //        self.people = [brad,vick,collin,john,jeff,dan,leo,alex,kirby, mike]
-//    
+//
 //    }
     
-    func loadRosterFromPlist() -> Person[] {
+    func loadRosterFromPlist() -> [Person] {
         
-    var people = Person[]() //You can do 'var roster = Array<Person>'
+    var people = [Person]() //You can do 'var roster = Array<Person>'
     
-    let plistPersonPath = NSBundle.mainBundle().pathForResource("personsList", ofType: "plist")
-    let personList = NSArray(contentsOfFile:plistPersonPath) as NSArray
-    
-        for object : AnyObject in personList {//The 'For in' will loop thru the 'Person' array
+//    let plistPersonPath = NSBundle.mainBundle().pathForResource("personsList", ofType: "plist")
+//    let personList = NSArray(contentsOfFile:plistPersonPath) as NSArray
+        
+        let plistPersonPath = NSArray(contentsOfFile:NSBundle.mainBundle().pathForResource("personsList", ofType: "plist")) as NSArray
+
+        for object : AnyObject in plistPersonPath {//The 'For in' will loop thru the 'Person' array
         
             if let person = object as? Dictionary<String, String> {
             // this catches any dictionary within the plist and passes in 'firstName' and 'lastName' as the 'for in' loops in the 'Person' array
@@ -83,33 +85,52 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as PersonCell
+        
+        
+        //cell.cellImage.backgroundColor = UIColor.greenColor()
         
         let rowPerson = people[indexPath.row]
-        cell.textLabel.text = rowPerson.fullName()
+        cell.cellImage!.image = rowPerson.image
+        //cell.personName.backgroundColor = UIColor.redColor()
+        
+        cell.personName!.text = rowPerson.fullName()
+        println(rowPerson.fullName())
+      //  cell.textLabel.text = rowPerson.fullName()
+        
+        
+        
         println("deque reusable cell")
     
     return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//    
+//        if segue.identifier == "showPerson" {
+//        
+//            let destination = segue.destinationViewController as DetailViewController
+//            destination.person = people[tableView!.indexPathForSelectedRow().row]
+//        } else if segue.identifier == "addNewPerson" {
+//            let destination = segue.destinationViewController as DetailViewController
+//            var person = Person (fName: " ", lName: " ")
+//            people.append(person)
+//            destination.person = person
+//            
+//        }
+//    }
     
-        if segue.identifier == "showPerson" {
-        
-            let destination = segue.destinationViewController as DetailViewController
-            destination.person = people[tableView!.indexPathForSelectedRow().row]
-        } else if segue.identifier == "addNewPerson" {
-            let destination = segue.destinationViewController as DetailViewController
-            var person = Person (fName: " ", lName: " ")
-            people.append(person)
-            destination.person = person
-            
-        }
-    }
-    
+    // Pushing cells manually from PeopleViewController to DetailViewController
     func tableView(tableView: UITableView!,
         didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            println(indexPath.row)
+            
+            let detail = self.storyboard.instantiateViewControllerWithIdentifier("detail") as DetailViewController
+            detail.person = self.people[indexPath.row]
+            
+            if self.navigationController {
+                self.navigationController.pushViewController(detail, animated: true)
+            }
     }
 }
    

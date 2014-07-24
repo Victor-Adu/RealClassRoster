@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B2294CF197EF83D0078C925 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2294CE197EF83D0078C925 /* DetailViewController.swift */; };
+		5B256B3B198046E100C6E183 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B256B3A198046E100C6E183 /* PersonCell.swift */; };
 		5B4DF5DD197DB64A008BBB51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */; };
 		5B4DF5DF197DB64A008BBB51 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5DE197DB64A008BBB51 /* PeopleViewController.swift */; };
 		5B4DF5E2197DB64A008BBB51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF5E0197DB64A008BBB51 /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		5B4DF600197DB727008BBB51 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DF5FE197DB727008BBB51 /* Person.swift */; };
 		5B4DF604197DC56C008BBB51 /* personsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF603197DC56C008BBB51 /* personsList.plist */; };
 		5B4DF605197DC56C008BBB51 /* personsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B4DF603197DC56C008BBB51 /* personsList.plist */; };
-		5BB09647197F15C4007C6E4B /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09646197F15C4007C6E4B /* placeholder.jpg */; };
 		5BB09654197F1B34007C6E4B /* alex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB09649197F1B34007C6E4B /* alex.jpg */; };
 		5BB09655197F1B34007C6E4B /* brad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964A197F1B34007C6E4B /* brad.jpg */; };
 		5BB09656197F1B34007C6E4B /* collin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0964B197F1B34007C6E4B /* collin.jpg */; };
@@ -44,9 +44,10 @@
 
 /* Begin PBXFileReference section */
 		5B2294CE197EF83D0078C925 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5B256B3A198046E100C6E183 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		5B4DF5D7197DB64A008BBB51 /* ClassRosterB19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassRosterB19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4DF5DB197DB64A008BBB51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ClassRosterB19/AppDelegate.swift; sourceTree = "<group>"; };
+		5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B4DF5DE197DB64A008BBB51 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		5B4DF5E1197DB64A008BBB51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B4DF5E3197DB64A008BBB51 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		5B4DF5FC197DB6CA008BBB51 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		5B4DF5FE197DB727008BBB51 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5B4DF603197DC56C008BBB51 /* personsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = personsList.plist; path = ClassRosterB19Tests/personsList.plist; sourceTree = SOURCE_ROOT; };
-		5BB09646197F15C4007C6E4B /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		5BB09649197F1B34007C6E4B /* alex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alex.jpg; sourceTree = "<group>"; };
 		5BB0964A197F1B34007C6E4B /* brad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brad.jpg; sourceTree = "<group>"; };
 		5BB0964B197F1B34007C6E4B /* collin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = collin.jpg; sourceTree = "<group>"; };
@@ -91,7 +91,6 @@
 		5B4DF5CE197DB64A008BBB51 = {
 			isa = PBXGroup;
 			children = (
-				5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */,
 				5B4DF5D9197DB64A008BBB51 /* ClassRosterB19 */,
 				5B4DF5EC197DB64A008BBB51 /* ClassRosterB19Tests */,
 				5B4DF5D8197DB64A008BBB51 /* Products */,
@@ -115,9 +114,7 @@
 				5B4DF5F9197DB657008BBB51 /* Models */,
 				5B4DF5E3197DB64A008BBB51 /* Images.xcassets */,
 				5BB09648197F1B34007C6E4B /* images */,
-				5BB09646197F15C4007C6E4B /* placeholder.jpg */,
 				5B4DF5DA197DB64A008BBB51 /* Supporting Files */,
-				5B4DF603197DC56C008BBB51 /* personsList.plist */,
 			);
 			path = ClassRosterB19;
 			sourceTree = "<group>";
@@ -152,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				5B4DF5FE197DB727008BBB51 /* Person.swift */,
+				5B4DF603197DC56C008BBB51 /* personsList.plist */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -160,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				5B4DF5E0197DB64A008BBB51 /* Main.storyboard */,
+				5B256B3A198046E100C6E183 /* PersonCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -167,6 +166,7 @@
 		5B4DF5FB197DB676008BBB51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5B4DF5DC197DB64A008BBB51 /* AppDelegate.swift */,
 				5B4DF5DE197DB64A008BBB51 /* PeopleViewController.swift */,
 				5B2294CE197EF83D0078C925 /* DetailViewController.swift */,
 			);
@@ -276,7 +276,6 @@
 				5BB09657197F1B34007C6E4B /* dan.jpg in Resources */,
 				5BB09654197F1B34007C6E4B /* alex.jpg in Resources */,
 				5BB0965C197F1B34007C6E4B /* mike.jpg in Resources */,
-				5BB09647197F15C4007C6E4B /* placeholder.jpg in Resources */,
 				5BB09658197F1B34007C6E4B /* jeff.jpg in Resources */,
 				5BB09656197F1B34007C6E4B /* collin.jpg in Resources */,
 				5BB0965B197F1B34007C6E4B /* leo.png in Resources */,
@@ -306,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B4DF5FF197DB727008BBB51 /* Person.swift in Sources */,
+				5B256B3B198046E100C6E183 /* PersonCell.swift in Sources */,
 				5B4DF5DF197DB64A008BBB51 /* PeopleViewController.swift in Sources */,
 				5B4DF5DD197DB64A008BBB51 /* AppDelegate.swift in Sources */,
 				5B2294CF197EF83D0078C925 /* DetailViewController.swift in Sources */,

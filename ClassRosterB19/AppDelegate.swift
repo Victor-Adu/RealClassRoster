@@ -15,7 +15,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        // Override point for customization after application launch.
+        
+     //   Below code works and safely unwraps the window.
+//        if let theWindow = self.window? {
+//            let nav = UINavigationController(rootViewController: theWindow.rootViewController)
+//            theWindow.rootViewController = nav
+//        }
+//        return true
+        
+//        Or you can set the navigationcontroller and store it in nave like below:::
+        
+        let nav = UINavigationController(rootViewController: self.window!.rootViewController)
+        self.window!.rootViewController = nav
+    
         return true
     }
 
