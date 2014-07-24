@@ -11,6 +11,7 @@ import QuartzCore
 import MobileCoreServices
 
 class DetailViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+    
     var person : Person!
 
     @IBOutlet var firstNameTextField: UITextField?
@@ -19,6 +20,8 @@ class DetailViewController: UIViewController, UINavigationControllerDelegate, UI
     
     @IBOutlet var githubHandle: UITextField?
     @IBOutlet var twitterHandle: UITextField?
+    
+    
     
     let textFieldPadding = 100
     

@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>firstName</key>
-		<string>Brad</string>
+		<string>Victor</string>
 		<key>lastName</key>
-		<string>Johnson</string>
+		<string>Adu</string>
 		<key>image</key>
-		<string>brad</string>
+		<string>vick</string>
 	</dict>
 	<dict>
 		<key>firstName</key>
