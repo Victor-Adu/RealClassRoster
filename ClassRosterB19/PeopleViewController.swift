@@ -11,6 +11,8 @@ import UIKit
 class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var people = [Person]() //Create an empty array in the Person class
+    
+    var person : Person!
                             
     @IBOutlet var tableView: UITableView?
     
@@ -21,7 +23,14 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView!.delegate = self
 //        self.setupPersonArray()
         people = loadRosterFromPlist()
-        self.tableView!.reloadData()
+        //self.tableView!.reloadData()
+        
+        //Hardcoding in the "Add" Top Nav Button
+        
+        let addNewPerson = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action:"addNewPerson")
+        self.navigationItem.rightBarButtonItem = addNewPerson
+        
+        
     }
     override func viewWillAppear(animated: Bool) {
         tableView!.reloadData()
@@ -68,10 +77,12 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 let newPerson = Person(fName: firstName!, lName: secondName!)
                 let imageName = person["image"]
                 
-                newPerson.image = UIImage(named: "\(imageName).jpg")
-                //newPerson.image = UIImage(named: imageName)
+                //newPerson.image = UIImage(named: "\(imageName).jpg")
+                newPerson.image = UIImage(named: imageName)
                 
                 people.append(newPerson)
+                
+                //var middleName = person["lastName"]
             
             }
         }
@@ -91,6 +102,7 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         //cell.cellImage.backgroundColor = UIColor.greenColor()
         
         let rowPerson = people[indexPath.row]
+        //println(rowPerson.image)
         cell.cellImage!.image = rowPerson.image
         //cell.personName.backgroundColor = UIColor.redColor()
         
@@ -132,8 +144,27 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.navigationController.pushViewController(detail, animated: true)
             }
     }
+    
+    
+    
+    @IBAction func addNewPerson() {
+        
+        var emptyPerson = Person(fName: " ", lName: " ")
+        emptyPerson.githubHandler = "GitHub Handle"
+        emptyPerson.twitterHandler = "Twitter Handle"
+        emptyPerson.image = UIImage(named: "placeholder")
+        
+        people.append(emptyPerson)
+        
+        let detail = self.storyboard.instantiateViewControllerWithIdentifier("detail") as DetailViewController
+        detail.person = emptyPerson
+        if  self.navigationController{
+            
+            self.navigationController.pushViewController(detail, animated: true)
+        }
+    }
 }
-   
+
 
 
 
