@@ -150,13 +150,10 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func addNewPerson() {
         
         var emptyPerson = Person(fName: " ", lName: " ")
-<<<<<<< HEAD
         emptyPerson.githubHandler = "GitHub Handle"
         emptyPerson.twitterHandler = "Twitter Handle"
-=======
         emptyPerson.githubHandler = "https://github.com/"
         emptyPerson.twitterHandler = "@"
->>>>>>> cfd10da492d955814e4a82017562d20d74d4354e
         emptyPerson.image = UIImage(named: "placeholder")
         
         people.append(emptyPerson)
